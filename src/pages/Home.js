@@ -59,7 +59,7 @@ Get those Green Squares on your GitHub Profile, Work on various Repositories/Pro
               <p className="project-desc">A CSS Library to solve all your frontend problems</p>
 
               <div className="project-card-bottom-layer">
-                  <input type="button" id="project-button" className="PrimaryButton" value="Open on GitHub" />
+                  <input type="button" id="project-button" className="PrimaryButton" value="view" />
                 <p className="project-tech-stack">
                   CSS/SCSS
                 </p>
@@ -76,7 +76,7 @@ Get those Green Squares on your GitHub Profile, Work on various Repositories/Pro
               <p className="project-desc">A CSS Library to solve all your frontend problems</p>
 
               <div className="project-card-bottom-layer">
-                  <input type="button" id="project-button" className="PrimaryButton" value="Open on GitHub" />
+                  <input type="button" id="project-button" className="PrimaryButton" value="view" />
                 <p className="project-tech-stack">
                   CSS/SCSS
                 </p>
@@ -93,7 +93,7 @@ Get those Green Squares on your GitHub Profile, Work on various Repositories/Pro
               <p className="project-desc">A CSS Library to solve all your frontend problems</p>
 
               <div className="project-card-bottom-layer">
-                  <input type="button" id="project-button" className="PrimaryButton" value="Open on GitHub" />
+                  <input type="button" id="project-button" className="PrimaryButton" value="view" />
                 <p className="project-tech-stack">
                   CSS/SCSS
                 </p>
@@ -114,7 +114,7 @@ Get those Green Squares on your GitHub Profile, Work on various Repositories/Pro
               <p className="project-desc">A CSS Library to solve all your frontend problems</p>
 
               <div className="project-card-bottom-layer">
-                  <input type="button" id="project-button" className="PrimaryButton" value="Open on GitHub" />
+                  <input type="button" id="project-button" className="PrimaryButton" value="view" />
                 <p className="project-tech-stack">
                   CSS/SCSS
                 </p>
@@ -131,7 +131,7 @@ Get those Green Squares on your GitHub Profile, Work on various Repositories/Pro
               <p className="project-desc">A CSS Library to solve all your frontend problems</p>
 
               <div className="project-card-bottom-layer">
-                  <input type="button" id="project-button" className="PrimaryButton" value="Open on GitHub" />
+                  <input type="button" id="project-button" className="PrimaryButton" value="view" />
                 <p className="project-tech-stack">
                   CSS/SCSS
                 </p>
@@ -148,7 +148,7 @@ Get those Green Squares on your GitHub Profile, Work on various Repositories/Pro
               <p className="project-desc">A CSS Library to solve all your frontend problems</p>
 
               <div className="project-card-bottom-layer">
-                  <input type="button" id="project-button" className="PrimaryButton" value="Open on GitHub" />
+                  <input type="button" id="project-button" className="PrimaryButton" value="view" />
                 <p className="project-tech-stack">
                   CSS/SCSS
                 </p>

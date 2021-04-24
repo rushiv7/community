@@ -8,15 +8,16 @@
 
 .project-layer {
   margin-top: 3em;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  align-items: center;
 }
 
 .project-card {
-  box-sizing: border-box;
+align-items: center;  box-sizing: border-box;
   overflow: hidden;
-  margin-right: auto;
-  margin-left: auto;
-  width: 30%;
+  margin: 1rem;
+  width: inherit;
   border-radius: 8px;
   box-shadow: 4px 8px 18px rgba(0, 0, 0, 0.244);
 }
@@ -61,4 +62,64 @@
 #project-button {
   padding: 0.6em;
   margin-right: 1em;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  
+}
+// Modal Head 
+.modal-head{
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem;
+  font-family: var(--tds-font-poppins);
+  h1{
+    margin: 0;
+  }
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 4px 8px 18px rgba(0, 0, 0, 0.244);
+  width: 50%; /* Could be more or less, depending on screen size */
+  p{
+    padding: .5rem;
+    margin: 0;
+    color: gray;
+  font-weight: 26px;
+  font-family: var(--tds-font-roboto);
+  }
+  .PrimaryButton{
+    margin: .5rem;
+  }
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  align-self: center;
+  font-size: 28px;
+  font-weight: bold;
+  &:hover,:focus{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 }
