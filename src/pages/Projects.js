@@ -14,7 +14,7 @@ const Projects = ({ data }) => {
 
             <div className="project-details-section">
               <p className="project-name">{data.project_name}</p>
-              <p className="project-desc"></p>
+              <p className="project-desc">{data.project_desc}</p>
 
               <div className="project-card-bottom-layer">
                 <button className="PrimaryButton" id="project-button">
