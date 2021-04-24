@@ -10,6 +10,7 @@ import GitHubLogo from "../components/GithubLogo.png";
 const Home = () => {
   const [datas] = useState(Data.Projects);
   console.log(datas);
+  
   return (
     <div className="Home">
     
@@ -49,7 +50,6 @@ Get those Green Squares on your GitHub Profile, Work on various Repositories/Pro
 
     <div className="home-projects-container">
       <h3 className="page-headline">Our Projects</h3>
-      <div className="home-projects-slider-section">
 
         <div className="home-project-cards-layer">
 
@@ -104,7 +104,6 @@ Get those Green Squares on your GitHub Profile, Work on various Repositories/Pro
               </div>
             </div>
           </div>
-        </div>
 
         <div className="home-project-cards-layer">
 
@@ -152,7 +151,7 @@ Get those Green Squares on your GitHub Profile, Work on various Repositories/Pro
             </div>
           </div>
         </div>
-      </div>
+
       <h2 className="page-headline">Our Projects</h2>
       <div className="projects-alt-container">
         {datas.map((data, index) => (
