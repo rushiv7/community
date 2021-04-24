@@ -1,11 +1,15 @@
+import React, { useState } from "react";
+import "../css/main.css";
+import Projects from "./Projects";
+import Data from "../Data/ProjectsData.json";
 
-import '../css/main.css'
-import Projects from './Projects'
 // import DemoCardComponent from '../components/tds_card_demo.png'
-import DiscordLogo from '../components/DiscordLogo.png'
-import GitHubLogo from '../components/GithubLogo.png'
+import DiscordLogo from "../components/DiscordLogo.png";
+import GitHubLogo from "../components/GithubLogo.png";
 
 const Home = () => {
+  const [datas] = useState(Data.Projects);
+  console.log(datas);
   return (
     <div className="Home">
     
@@ -138,14 +142,6 @@ Get those Green Squares on your GitHub Profile, Work on various Repositories/Pro
               </div>
             </div>
           </div>
-          <div className="home-project-card" id="project-card-06">
-            <div className="project-image-container">
-                <img className="project-image" />
-              </div>
-            
-            <div className="project-details-section">
-              <p className="project-name">Eccentric Touch</p>
-              <p className="project-desc">A CSS Library to solve all your frontend problems</p>
 
               <div className="project-card-bottom-layer">
                   <input type="button" id="project-button" className="PrimaryButton" value="view" />
@@ -156,14 +152,15 @@ Get those Green Squares on your GitHub Profile, Work on various Repositories/Pro
             </div>
           </div>
         </div>
-
-      
+      </div>
+      <h2 className="page-headline">Our Projects</h2>
+      <div className="projects-alt-container">
+        {datas.map((data, index) => (
+          <Projects data={data} />
+        ))}
       </div>
     </div>
-
-  </div>  
-   
-  )
+  );
 };
 
 export default Home;

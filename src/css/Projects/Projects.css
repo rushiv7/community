@@ -1,5 +1,4 @@
 .Projects {
-  margin-top: 6em;
   margin-right: auto;
   margin-left: auto;
   max-width: 1400px;
@@ -21,13 +20,14 @@
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   overflow: hidden;
   margin: 1rem;
   width: inherit;
+
   border-radius: 8px;
   -webkit-box-shadow: 4px 8px 18px rgba(0, 0, 0, 0.244);
-          box-shadow: 4px 8px 18px rgba(0, 0, 0, 0.244);
+  box-shadow: 4px 8px 18px rgba(0, 0, 0, 0.244);
 }
 
 .project-image-container {
@@ -67,14 +67,15 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #project-button {
   padding: 0.6em;
   margin-right: 1em;
 }
+
 
 /* The Modal (background) */
 .modal {
