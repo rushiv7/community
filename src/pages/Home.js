@@ -4,8 +4,8 @@ import Projects from "./Projects";
 import Data from "../Data/ProjectsData.json";
 
 // import DemoCardComponent from '../components/tds_card_demo.png'
-import DiscordLogo from "../components/DiscordLogo.png";
-import GitHubLogo from "../components/GithubLogo.png";
+import DiscordLogo from "../Components/DiscordLogo.png";
+import GitHubLogo from "../Components/GithubLogo.png";
 
 const Home = () => {
   const [datas] = useState(Data.Projects);
@@ -48,109 +48,7 @@ Get those Green Squares on your GitHub Profile, Work on various Repositories/Pro
 
     {/* Starting the OurProjects Section */}
 
-    <div className="home-projects-container">
-      <h3 className="page-headline">Our Projects</h3>
-
-        <div className="home-project-cards-layer">
-
-          <div className="home-project-card" id="project-card-01">
-            <div className="project-image-container">
-                <img className="project-image" />
-              </div>
-            
-            <div className="project-details-section">
-              <p className="project-name">Eccentric Touch</p>
-              <p className="project-desc">A CSS Library to solve all your frontend problems</p>
-
-              <div className="project-card-bottom-layer">
-                  <input type="button" id="project-button" className="PrimaryButton" value="view" />
-                <p className="project-tech-stack">
-                  CSS/SCSS
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="home-project-card" id="project-card-02">
-            <div className="project-image-container">
-                <img className="project-image" />
-              </div>
-            
-            <div className="project-details-section">
-              <p className="project-name">Eccentric Touch</p>
-              <p className="project-desc">A CSS Library to solve all your frontend problems</p>
-
-              <div className="project-card-bottom-layer">
-                  <input type="button" id="project-button" className="PrimaryButton" value="view" />
-                <p className="project-tech-stack">
-                  CSS/SCSS
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="home-project-card" id="project-card-03">
-            <div className="project-image-container">
-                <img className="project-image" />
-              </div>
-            
-            <div className="project-details-section">
-              <p className="project-name">Eccentric Touch</p>
-              <p className="project-desc">A CSS Library to solve all your frontend problems</p>
-
-              <div className="project-card-bottom-layer">
-                  <input type="button" id="project-button" className="PrimaryButton" value="view" />
-                <p className="project-tech-stack">
-                  CSS/SCSS
-                </p>
-              </div>
-            </div>
-          </div>
-
-        <div className="home-project-cards-layer">
-
-          <div className="home-project-card" id="project-card-04">
-            <div className="project-image-container">
-                <img className="project-image" />
-              </div>
-            
-            <div className="project-details-section">
-              <p className="project-name">Eccentric Touch</p>
-              <p className="project-desc">A CSS Library to solve all your frontend problems</p>
-
-              <div className="project-card-bottom-layer">
-                  <input type="button" id="project-button" className="PrimaryButton" value="view" />
-                <p className="project-tech-stack">
-                  CSS/SCSS
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="home-project-card" id="project-card-05">
-            <div className="project-image-container">
-                <img className="project-image" />
-              </div>
-            
-            <div className="project-details-section">
-              <p className="project-name">Eccentric Touch</p>
-              <p className="project-desc">A CSS Library to solve all your frontend problems</p>
-
-              <div className="project-card-bottom-layer">
-                  <input type="button" id="project-button" className="PrimaryButton" value="view" />
-                <p className="project-tech-stack">
-                  CSS/SCSS
-                </p>
-              </div>
-            </div>
-          </div>
-
-              <div className="project-card-bottom-layer">
-                  <input type="button" id="project-button" className="PrimaryButton" value="view" />
-                <p className="project-tech-stack">
-                  CSS/SCSS
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+    
 
       <h2 className="page-headline">Our Projects</h2>
       <div className="projects-alt-container">
