@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react';
 import { HashRouter, Route, Link } from "react-router-dom";
 import '../Theme/main.css'
-
+import Logo from '../Assets/Images/designsystemsLogo.jpg'
 
 const Header = function Header() {
   return (
@@ -10,7 +10,7 @@ const Header = function Header() {
 
       <div className="page-body">
         <div className="HeaderComponent-Logo">
-          <img src="https://avatars.githubusercontent.com/u/77277573?s=200&v=4" alt="LogoImage" className="LogoImage" />
+          <img src={Logo} alt="LogoImage" className="LogoImage" />
           <a className="LogoText">The DesignSystems</a>
         </div>
         <div className="HeaderComponent-Options">
@@ -19,9 +19,9 @@ const Header = function Header() {
               <Link to="/">
                 <li className="HeaderComponent-HeaderOption">Home</li>
               </Link>
-              <Link to="/projects">
+              {/* <Link to="/projects">
                 <li className="HeaderComponent-HeaderOption">Projects</li>
-              </Link>
+              </Link> */}
               <Link to="/events">
                 <li className="HeaderComponent-HeaderOption">Events</li>
               </Link>

@@ -1,1 +1,53 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.Projects {
+  background-color: var(--tds-blue);
+}
+
+.Home-ProjectsContainer {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.Projects .headline {
+  color: white;
+}
+
+.Home-ProjectsLayer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ProjectCard {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2em;
+  width: 28%;
+  border-radius: 4px;
+  background-color: white;
+  -webkit-box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.319);
+          box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.319);
+}
+
+.ProjectCard .ProjectCard-CardBody {
+  padding: 2em;
+}
+
+.ProjectCard:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: #ececec solid;
+  outline-width: 2px;
+}
+
+@media screen and (max-width: 1000px) {
+  .Home-ProjectsLayer {
+    display: block;
+  }
+  .ProjectCard {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
