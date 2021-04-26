@@ -32,8 +32,7 @@ a {
   font-size: 42px;
 }
 
-button:focus,
-input:focus {
+button:focus, input:focus {
   outline: none;
 }
 
@@ -56,25 +55,15 @@ input:focus {
   border-radius: 4px;
 }
 
-.PrimaryButton:hover,
-.SecondaryButton:hover {
+.PrimaryButton:hover, .SecondaryButton:hover {
   -webkit-filter: brightness(90%);
-  filter: brightness(90%);
+          filter: brightness(90%);
 }
 
 .headline {
   color: white;
   font-family: var(--tds-font-poppins);
   margin: 0;
-}
-
-.projects-alt-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.page-headline {
-  padding-left: 15px;
 }
 
 #under-development-badge {
