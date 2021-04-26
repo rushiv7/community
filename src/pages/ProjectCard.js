@@ -1,5 +1,6 @@
-const ProjectCard = ({title, projectdetails}) => {
-     
+const ProjectCard = ({ProjectDetails}) => {
+  
+  console.log(ProjectDetails)
   //Modal Js
   const modalClick = (e)=>{
      // Get the modal
@@ -22,9 +23,9 @@ const ProjectCard = ({title, projectdetails}) => {
        if (event.target == modal) {
          modal.style.display = "none";
        }
-       } 
+      } 
    }
-   const mainDetails = projectdetails ? projectdetails.substring(0, 50) : '';
+   const mainDetails = ProjectDetails.project_desc ? ProjectDetails.project_desc.substring(0, 50) : '';
      return (
         
           // {/* Project Card Component */}
@@ -34,7 +35,7 @@ const ProjectCard = ({title, projectdetails}) => {
             </div>
           
           <div className="project-details-section">
-            <p className="project-name">{title}</p>
+            <p className="project-name">{ProjectDetails["project_name"]}</p>
             <p className="project-desc">{mainDetails}...</p>
 
             <div className="project-card-bottom-layer">
@@ -46,17 +47,19 @@ const ProjectCard = ({title, projectdetails}) => {
                     {/* <!-- Modal content --> */}
                     <div class="modal-content">
                       <div className="modal-head">
-                        <h1 className="modal-title">{title}</h1>
+                        <h1 className="modal-title">{ProjectDetails.project_name}</h1>
                         <span class="close">&times;</span>
                       </div>
-                      <p>{projectdetails}</p>
-                      <input type="button" id="project-button" className="PrimaryButton" value="Open on Github"/>
+                      <p>{ProjectDetails["project_desc"]}</p>
+                        <a href={ProjectDetails["github_url"]} target="_blank">
+                          <input type="button" id="project-button" className="PrimaryButton" value="Open on Github" />
+                        </a>
                     </div>               
                   </div>
                 {/* <!-- Close Modal --> */}
 
               <p className="project-tech-stack">
-                CSS/SCSS
+                {ProjectDetails["tech_stack"]}
               </p>
             </div>
           </div>

@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import "../css/main.css";
 import Projects from "./Projects";
-import Data from "../Data/ProjectsData.json";
+
 
 // import DemoCardComponent from '../components/tds_card_demo.png'
 import DiscordLogo from "../Components/DiscordLogo.png";
 import GitHubLogo from "../Components/GithubLogo.png";
 
 const Home = () => {
-  const [datas] = useState(Data.Projects);
-  console.log(datas);
+  
   
   return (
     <div className="Home">
@@ -48,14 +47,10 @@ Get those Green Squares on your GitHub Profile, Work on various Repositories/Pro
 
     {/* Starting the OurProjects Section */}
 
+    <Projects />
     
 
-      <h2 className="page-headline">Our Projects</h2>
-      <div className="projects-alt-container">
-        {datas.map((data, index) => (
-          <Projects data={data} />
-        ))}
-      </div>
+      
     </div>
   );
 };

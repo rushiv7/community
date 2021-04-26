@@ -1,20 +1,22 @@
 
-import '../css/Projects/Projects.css';
+import '../css/main.css';
 import ProjectCard from './ProjectCard';
+import Data from "../Data/ProjectsData.json";
+import React, { useState } from "react";
 
 const Projects = () => {
 
+  const [datas] = useState(Data.Projects);
+  console.log(datas);
   return (
 
     <div className="Projects">
-      <div className="project-section">
-        
-        {/* Layer Container - Flex Cards */}
-        <div className="project-layer">
-          <ProjectCard title ="Eccentric touch 1" projectdetails="
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus natus aliquam quam dignissimos ratione et enim. Eveniet placeat deleniti optio, tenetur dolorem ad reprehenderit provident eaque perspiciatis! Tempore molestiae officia deserunt similique, obcaecati nostrum optio molestias a dolore eos delectus amet, quisquam soluta sequi, corporis iusto. Incidunt sunt aperiam esse."
-          />
-        </div> {/** End of Project Layer */}
+      <h2 className="page-headline">Our Projects</h2>
+      <div className="project-layer">
+        {datas.map((data, index) => (
+          <ProjectCard
+            ProjectDetails={data} />
+        ))}
       </div>
     </div>
   )
