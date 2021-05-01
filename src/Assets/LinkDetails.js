@@ -1,6 +1,6 @@
 
 class __LinkDetails {
-  
+
   getDiscordServerURL() {
     return "https://discord.gg/2m244yVTsg".toString()
   }
@@ -24,7 +24,7 @@ class __LinkDetails {
         "project_github_url": "https://github.com/DesignSystemsOSS/getresume.io",
         "project_stack": "ReactJS, CSS/CSS"
       }
-    ]
+    ];
   }
 };
 
