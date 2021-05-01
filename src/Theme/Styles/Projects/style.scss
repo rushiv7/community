@@ -14,34 +14,24 @@
 
 .Home-ProjectsLayer {
   align-items: center;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 .ProjectCard {
+  padding: 1em;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: white;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 2em;
-  width: 28%;
-  border-radius: 4px;
-  background-color: white;
-  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.319);
+  width: 33%;
 }
 
-.ProjectCard .ProjectCard-CardBody {
-  padding: 2em;
+.ProjectCard-title {
+  color: var(--tds-black);
 }
 
-.ProjectCard:hover {
-  box-shadow: none;
-  outline: rgb(236, 236, 236) solid;
-  outline-width: 2px;
-}
-
-@media screen and (max-width: 1000px) {
-  .Home-ProjectsLayer {
-    display: block;
-  }
-  .ProjectCard {
-    width: 80%;
-  }
+.ProjectCard-description {
+  color: var(--tds-black);
 }
