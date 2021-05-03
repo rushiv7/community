@@ -1,8 +1,8 @@
 
 
 // Importing components - header and Footer Components for static display
-import Header from './Components/Header';
-import Footer from './Components/Footer';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import React, { Suspense } from 'react';
 import { Switch, Route, HashRouter } from 'react-router-dom';
 

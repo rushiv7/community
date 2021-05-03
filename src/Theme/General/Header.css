@@ -1,5 +1,5 @@
 .Header {
-  padding: 0.4em;
+  padding: 0.4em 0em 0.4em 0em;
   background-color: var(--tds-white);
   overflow: hidden;
   -webkit-box-shadow: var(--tds-shadow-light);
